@@ -170,7 +170,7 @@ body {
 		}
 		.main__bgc-img {
 			position: relative;
-			bottom: 420px;
+			bottom: 430px;
 		}
 
 		.main__title {
@@ -185,8 +185,14 @@ body {
 		}
 	}
 	@media screen and (max-width: 520px) {
+		.main__bgc-img {
+			margin-top: 75px;
+		}
 		.main__title {
 			padding-left: 25px;
+		}
+		.subtitle__main {
+			font-size: 20px;
 		}
 		.title__main {
 			font-size: 30px;
@@ -260,6 +266,7 @@ body {
 		.about__us {
 			display: flex;
 			flex-direction: column;
+			margin-left: 0;
 		}
 		.about__title {
 			font-size: 50px;
@@ -325,7 +332,6 @@ body {
 			display: none;
 		}
 		.info__text {
-			
 			font-size: 22px;
 		}
 	}
@@ -343,8 +349,6 @@ body {
 		background-position: right;
 	}
 	.title {
-		font-family: "Nasalization";
-		font-weight: 400;
 		font-size: 68px;
 		line-height: 81px;
 		text-transform: uppercase;
@@ -381,8 +385,8 @@ body {
 			margin-bottom: 1rem !important;
 		}
 	}
-	@media screen and (max-width: 450px){
-		.stages__work{
+	@media screen and (max-width: 450px) {
+		.stages__work {
 			background-image: none;
 		}
 		.content__card_title {
@@ -625,11 +629,10 @@ body {
 		}
 		.team__items {
 			display: contents;
-		
 		}
 	}
-	@media screen and (max-width: 450px){
-		.team__item_title{
+	@media screen and (max-width: 450px) {
+		.team__item_title {
 			font-size: 20px;
 		}
 	}
@@ -687,6 +690,7 @@ body {
 	}
 
 	#send {
+		margin-top: 50px;
 		height: 100px;
 		width: 600px;
 		border: 3px solid #ffffff;
@@ -770,12 +774,9 @@ body {
 	@media screen and (max-width: 770px) {
 		.form__left {
 			display: none;
-			// top: 790%;
-			// left: 85px;
+		
 		}
-		// .form__callback{
-		// 	left: 40px;
-		// }
+	
 	}
 	@media screen and (max-width: 600px) {
 		.form__img-line {
@@ -808,10 +809,10 @@ footer {
 	padding: 20px 0;
 	background-color: #132f59;
 	z-index: 99;
-.row{
-	display: flex;
-	align-items: center;
-}
+	.row {
+		display: flex;
+		align-items: center;
+	}
 
 	ul {
 		margin: 0;
@@ -856,16 +857,20 @@ footer {
 		.container {
 			margin-top: 0;
 		}
-		.container__nav{
+		.container__nav {
 			width: 100%;
 		}
-		
 	}
 	@media screen and (max-width: 440px) {
 		ul {
 			display: flex;
 			flex-direction: column;
 		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.container__nav {
+		display: none;
 	}
 }
 

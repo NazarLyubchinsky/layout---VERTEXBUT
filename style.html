@@ -26,10 +26,10 @@
 				<div class="d-none d-lg-block col-8">
 					<nav>
 						<ul class="d-flex justify-content-end  align-items-center">
-							<li><a href="#">Контакти</a></li>
+							<li><a href="#contacts">Контакти</a></li>
 							<li><a href="#">Проєкти</a></li>
-							<li><a href="#">Проєкти</a></li>
-							<li><a href="#">Про нас</a></li>
+							<li><a href="#team">Команда</a></li>
+							<li><a href="#About__us">Про нас</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -46,10 +46,10 @@
 		<div class="mobile__menu">
 			<nav>
 				<ul class="d-flex justify-content-end align-items-center">
-					<li><a href="#">Контакти</a></li>
+					<li><a href="#contacts">Контакти</a></li>
 					<li><a href="#">Проєкти</a></li>
-					<li><a href="#">Проєкти</a></li>
-					<li><a href="#">Про нас</a></li>
+					<li><a href="#team">Команда</a></li>
+					<li><a href="#About__us">Про нас</a></li>
 				</ul>
 			</nav>
 		</div>
@@ -75,7 +75,7 @@
 		</div>
 	</main>
 
-	<div class="corner"> <img src="img/corner.png" alt=""></div>
+	<div id="About__us" class="corner"> <img src="img/corner.png" alt=""></div>
 	<div class="corner1"> <img src="img/corner (1).png" alt=""></div>
 	<section class="about">
 		<div class="container">
@@ -190,7 +190,7 @@
 		</div>
 	</div>
 
-	<section class="servis">
+	<section class="servis" id="team">
 		<div class="container">
 			<div class="services">
 				<div class="row">
@@ -223,18 +223,18 @@
 							<div class="servis__img"><img src="img/Group 11.png" alt=""></div>
 						</div>
 						<div class="col-12 col-lg-2">
-						<div class="block__right">
-							<div  class="servis__item" >
-								<div class="servis__item_title">Загальнобудівельні роботи
+							<div class="block__right">
+								<div class="servis__item">
+									<div class="servis__item_title">Загальнобудівельні роботи
+									</div>
+									<div class="servis__item_text">цілий комплекс будівельних робіт, різного характеру і
+										напрямки, зведення, будівництво і реконструкція будівель, споруд та
+										іншихх Об’єктів, що здійснюються на різних етапах будівництва,
+										експлуатації або ремонту.
+									</div>
+									<button class="servis__item_btn">Більше деталей<img src="img/Arrow 4.png" alt=""></button>
 								</div>
-								<div class="servis__item_text">цілий комплекс будівельних робіт, різного характеру і
-									напрямки,  зведення, будівництво і реконструкція будівель, споруд та
-									іншихх Об’єктів, що здійснюються на різних етапах будівництва,
-									експлуатації або ремонту.
-								</div>
-								<button class="servis__item_btn">Більше деталей<img src="img/Arrow 4.png" alt=""></button>
 							</div>
-						</div>
 						</div>
 					</div>
 				</div>
@@ -334,17 +334,17 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-12 col-lg-6">
-					<div class="form__callback">
+					<form class="form__callback">
 						<div class="form__title">Ми раді будемо вам допомогти</div>
-						<input id="name" type="text" placeholder="Ім’я">
-						<input id="phone" type="text" placeholder="Номер телефону">
+						<input id="name" type="text" placeholder="Ім’я" required>
+						<input id="phone" type="text" placeholder="Номер телефону" required>
 						<div class="form__chbox">
 							<input type="checkbox" id="check">
 							<label for="check">Я погоджуюсь з політикою конфіденційності</label>
+							<button id="send">Надіслати запит <img src="img/Arrow 3.svg" alt=""></button>
 						</div>
-						<button id="send">Надіслати запит <img src="img/Arrow 3.svg" alt=""></button>
 						<div class="form__line"></div>
-					</div>
+					</form>
 				</div>
 				<div class="col-12 col-lg-6">
 					<div class="form__left">
@@ -357,7 +357,7 @@
 	</section>
 
 
-	<footer>
+	<footer id="contacts">
 		<div class="container">
 			<div class="row container__content">
 				<div class="col-4">
@@ -368,10 +368,10 @@
 				<div class="container__nav d-lg-block col-8">
 					<nav>
 						<ul class="d-flex justify-content-end  align-items-center">
-							<li><a href="#">Контакти</a></li>
+							<li><a href="#contacts">Контакти</a></li>
 							<li><a href="#">Проєкти</a></li>
-							<li><a href="#">Проєкти</a></li>
-							<li><a href="#">Про нас</a></li>
+							<li><a href="#team">Команда</a></li>
+							<li><a href="#About__us">Про нас</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -403,13 +403,13 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<form class="col-4">
 					<div class="footer__title">ЗАЛИШИТИ ЗАЯВКУ</div>
-					<input id="phone" type="text" placeholder="Номер телефону">
+					<input id="phone" type="tel" placeholder="Номер телефону" required>
+					<button type="submit" id="send">Надіслати запит <img src="img/Arrow 3.svg" alt=""></button>
 					<div class="footer__btn">
-						<button id="send">Надіслати запит <img src="img/Arrow 3.svg" alt=""></button>
 					</div>
-				</div>
+				</form>
 			</div>
 	</footer>
 
